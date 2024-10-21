@@ -12,6 +12,10 @@ public class ContactoService {
         return agenda;
     }
 
+    public void guardarContacto(Contacto contacto){
+        agenda.put(contacto.getNombre(),contacto);
+    }
+
     //Eliminar un contacto
     public boolean eliminarContacto(String nombre){
         Contacto contacto = agenda.get(nombre);
